@@ -1,0 +1,5 @@
+﻿  RandomDeadShowGenerator.cpp
+C:\Users\keder\source\repos\RandomDeadShowGenerator\RandomDeadShowGenerator\RandomDeadShowGenerator.cpp(22,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\keder\source\repos\RandomDeadShowGenerator\RandomDeadShowGenerator\RandomDeadShowGenerator.cpp(59,10): warning C4129:  ' ': unrecognized character escape sequence
+C:\Users\keder\source\repos\RandomDeadShowGenerator\RandomDeadShowGenerator\RandomDeadShowGenerator.cpp(73,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RandomDeadShowGenerator.vcxproj -> C:\Users\keder\source\repos\RandomDeadShowGenerator\Debug\RandomDeadShowGenerator.exe
