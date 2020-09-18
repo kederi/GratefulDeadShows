@@ -29,6 +29,11 @@ string findRandomDate()
 	}
 	
 	int randNum = rand() % numLines - 1;
+
+	// here i am calling the hashmap builder using the lines vector.
+	urlHolderMaker(lines);
+
+
 	return lines[randNum];
 }
 void printStealie()
@@ -62,6 +67,49 @@ void printStealie()
 	cout << "          `'##;##;##;##;##`'" << endl;
 	cout << "            `' `' `' `' `'" << endl;
 }
+
+
+
+// Building hashmap with keys as dates and values as
+// url linking to audio recording.
+
+
+// mapping a string(date) to an array of strings (urls)
+#include <hash_map>
+
+// takes a date from the user in format xx-xx-xx
+// and returns a string containing the url link
+// to the audio recording.
+string urlHolderMaker(vector<string> dateVector) {
+
+	HashMap<string, string> urlHolder = new HashMap<>();
+
+	for (int i = 0; i < dateVector.length(); ++i) {
+		
+		string currDate = dateVector(i);
+		
+		// I don't know how to make the value part of the hashmap vector data type.
+		// vector<string> currVect
+
+		// temporary solution is to just have one url link per key.
+		string currUrl = urlBuilder(currDate);
+
+		map.put(currDate, currUrl)
+	}
+}
+
+string urlBuilder(string date) {
+	string url = "https://reslisten.net/grateful-dead/" + date;
+
+	return url;
+}
+
+
+
+
+
+
+
 
 int main()
 {
@@ -105,5 +153,6 @@ int main()
 	}
 
 }
+
 
 
